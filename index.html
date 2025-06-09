@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,28 @@
     <link rel="stylesheet" href="style/home.css">
     <title>Home Page</title>
 </head>
+
 <body>
     <nav class="header">
-        <a href="#" class="leftHeader">
+        <span class="leftHeader navigateSpan" onclick="transitionToPage('index.html')">
             Hitori
-        </a>
+        </span>
         <div class="rightHeader">
-            <a href="#">Home</a>
-            <a href="html/projectPage.html">Project</a>
-            <a href="html/skillPage.html">Skills</a>
-            <a href="html/aboutMePage.html">About Me</a>
-            <a href="html/contact.html">Contact</a>
+            <span class="navigateSpan" onclick="transitionToPage('index.html')">
+                Home
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('html/projectPage.html')">
+                Project
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('html/skillPage.html')">
+                Skills
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('html/aboutMePage.html')">
+                About Me
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('html/contact.html')">
+                Contact
+            </span>
         </div>
     </nav>
 
@@ -32,10 +44,16 @@
             <img class="profile" src="profile.jpg">
         </div>
     </div>
-    
+
     <footer>
-        <a href="https://github.com/Alexspector123" target="_blank"><i class="fa fa-github" style="font-size:30px; margin-left: 100px;"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin" style="font-size:30px; margin-left: 30px;"></i></a>
+        <span class="navigateSpan" onclick="transitionToPage('https://github.com/Alexspector123', '_blank')">
+            <i class="fa fa-github" style="font-size:30px; margin-left: 100px;"></i>
+        </span>
+                <span class="navigateSpan" onclick="transitionToPage('https://www.linkedin.com/in/huy-phan-a0718a271/', '_blank')">
+            <i class="fa fa-linkedin" style="font-size:30px; margin-left: 30px;"></i>
+        </span>
     </footer>
+    <script src="js/animation.js"></script>
 </body>
+
 </html>

@@ -11,15 +11,25 @@
 </head>
 <body>
     <nav class="header">
-        <a href="../index.html" class="leftHeader">
+        <span class="leftHeader navigateSpan" onclick="transitionToPage('../index.html')">
             Hitori
-        </a>
+        </span>
         <div class="rightHeader">
-            <a href="../index.html">Home</a>
-            <a href="projectPage.html">Project</a>
-            <a href="skillPage.html">Skills</a>
-            <a href="aboutMePage.html">About Me</a>
-            <a href="contact.html">Contact</a>
+            <span class="navigateSpan" onclick="transitionToPage('../index.html')">
+                Home
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('projectPage.html')">
+                Project
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('skillPage.html')">
+                Skills
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('aboutMePage.html')">
+                About Me
+            </span>
+            <span class="navigateSpan" onclick="transitionToPage('contact.html')">
+                Contact
+            </span>
         </div>
     </nav>
 
@@ -35,8 +45,13 @@
     </div>
     
     <footer>
-        <a href="https://github.com/Alexspector123" target="_blank"><i class="fa fa-github" style="font-size:30px; margin-left: 100px;"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin" style="font-size:30px; margin-left: 30px;"></i></a>
+        <span class="navigateSpan" onclick="transitionToPage('https://github.com/Alexspector123', '_blank')">
+            <i class="fa fa-github" style="font-size:30px; margin-left: 100px;"></i>
+        </span>
+                <span class="navigateSpan" onclick="transitionToPage('https://www.linkedin.com/in/huy-phan-a0718a271/', '_blank')">
+            <i class="fa fa-linkedin" style="font-size:30px; margin-left: 30px;"></i>
+        </span>
     </footer>
+    <script src="../js/animation.js"></script>
 </body>
 </html>

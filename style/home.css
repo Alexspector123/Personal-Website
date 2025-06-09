@@ -7,6 +7,8 @@
 
 body {
     padding-top: 80px;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 .main-content {
@@ -28,5 +30,5 @@ body {
 }
 
 span {
-    color: rgb(100,41,239);
+    color: rgb(100, 41, 239);
 }
